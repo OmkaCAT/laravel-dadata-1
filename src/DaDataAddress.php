@@ -52,7 +52,8 @@ class DaDataAddress extends DaDataService
         array   $locations_geo      = [],
         array   $locations_boost    = [],
         array   $from_bound         = [],
-        array   $to_bound           = []
+        array   $to_bound           = [],
+        bool    $restrictValue      = false
     ) : array
     {
 
@@ -65,6 +66,7 @@ class DaDataAddress extends DaDataService
             'locations_boost'   => $locations_boost,
             'from_bound'        => $from_bound,
             'to_bound'          => $to_bound,
+            'restrict_value'    => $restrictValue,
         ]);
     }
 
